@@ -1,12 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
-
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -16,39 +9,51 @@ const last_posts = posts.slice(0, 3);
     <div class="text-3xl py-3 font-bold">Software Engineer</div>
     <div class="py-2">
       <text class="text-lg">
-        I'm a junior full-stack web developer with <b>3+</b> years professional development experience. Currently working on a team building tools to help music educators spend more time helping students.
+        I'm a junior full-stack web developer with <b>3+</b> years professional development
+        experience. Currently working on a team building tools to help music educators
+        spend more time helping students.
       </text>
       <div class="mt-8">
-        <a class="btn" href="https://www.linkedin.com/in/sammie--walker/" target="_blank"> Let's connect!</a>
+        <a
+          class="btn"
+          href="https://www.linkedin.com/in/sammie--walker/"
+          target="_blank"
+        >
+          Let's connect!</a
+        >
       </div>
       <div class="md:grid grid-cols-2 md:divide-x-2 mt-12">
         <section>
-            <div class="text-2xl w-full mb-2 font-semibold pt-6">My Current Stack</div>
-            <ul class="flex space-x-2">
-              <li><b>Elixir</b></li>
-              <span>&bull;</span>
-              <li><b>Phoenix LiveView</b></li>
-              <span>&bull;</span>
-              <li><b>Tailwind</b></li>
-              <span>&bull;</span>
-              <li><b>Postgres</b></li>
-            </ul>
+          <div class="text-2xl w-full mb-2 font-semibold pt-6">
+            My Current Stack
+          </div>
+          <ul class="flex space-x-2">
+            <li><b>Elixir</b></li>
+            <span>&bull;</span>
+            <li><b>Phoenix LiveView</b></li>
+            <span>&bull;</span>
+            <li><b>Tailwind</b></li>
+            <span>&bull;</span>
+            <li><b>Postgres</b></li>
+          </ul>
         </section>
         <section class="md:pl-12">
-            <div class="text-2xl w-full mb-2 font-semibold pt-6">Previous Technologies</div>
-            <ul class="flex space-x-2">
-              <li><b>Angular</b></li>
-              <span>&bull;</span>
-              <li><b>React</b></li>
-              <span>&bull;</span>
-              <li><b>Java</b></li>
-              <span>&bull;</span>
-              <li><b>Bootstrap</b></li>
-              <span>&bull;</span>
-              <li><b>MongoDB</b></li>
-            </ul>
+          <div class="text-2xl w-full mb-2 font-semibold pt-6">
+            Previous Technologies
+          </div>
+          <ul class="flex space-x-2">
+            <li><b>Angular</b></li>
+            <span>&bull;</span>
+            <li><b>React</b></li>
+            <span>&bull;</span>
+            <li><b>Java</b></li>
+            <span>&bull;</span>
+            <li><b>Bootstrap</b></li>
+            <span>&bull;</span>
+            <li><b>MongoDB</b></li>
+          </ul>
         </section>
-        </div>
+      </div>
     </div>
   </div>
 </BaseLayout>
