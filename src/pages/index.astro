@@ -12,67 +12,43 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">I'm Sammie Walker</div>
+    <div class="text-3xl py-3 font-bold">Software Engineer</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        I'm a junior full-stack web developer with <b>3+</b> years professional development experience. Currently working on a team building tools to help music educators spend more time helping students.
       </text>
+      <div class="mt-8">
+        <a class="btn" href="https://www.linkedin.com/in/sammie--walker/" target="_blank"> Let's connect!</a>
+      </div>
+      <div class="md:grid grid-cols-2 md:divide-x-2 mt-12">
+        <section>
+            <div class="text-2xl w-full mb-2 font-semibold pt-6">My Current Stack</div>
+            <ul class="flex space-x-2">
+              <li><b>Elixir</b></li>
+              <span>&bull;</span>
+              <li><b>Phoenix LiveView</b></li>
+              <span>&bull;</span>
+              <li><b>Tailwind</b></li>
+              <span>&bull;</span>
+              <li><b>Postgres</b></li>
+            </ul>
+        </section>
+        <section class="md:pl-12">
+            <div class="text-2xl w-full mb-2 font-semibold pt-6">Previous Technologies</div>
+            <ul class="flex space-x-2">
+              <li><b>Angular</b></li>
+              <span>&bull;</span>
+              <li><b>React</b></li>
+              <span>&bull;</span>
+              <li><b>Java</b></li>
+              <span>&bull;</span>
+              <li><b>Bootstrap</b></li>
+              <span>&bull;</span>
+              <li><b>MongoDB</b></li>
+            </ul>
+        </section>
+        </div>
     </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
-    </div>
   </div>
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
-  </div>
-
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>

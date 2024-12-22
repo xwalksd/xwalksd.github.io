@@ -4,16 +4,24 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
+  <div class="mb-5 flex items-center" id="cv-section">
     <div class="text-3xl w-full font-bold">Profile</div>
+    <a
+      class="btn btn-outline normal-case text-xl print:hidden"
+      onclick="window.print()">Print me!️</a
+    >
   </div>
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
+  <p class="mb-10 text-justify">
+    Experienced full-stack Software Engineer with 3+ years of experience
+    designing, developing and maintaining dynamic web applications used by
+    thousands of customers. Skilled in front-end technologies such as React,
+    Angular and Phoenix LiveView, as well as back-end development with Elixir,
+    Java and databases such as MongoDB and Postgres. Proven ability in building
+    end-to-end web applications for patient services and education, ensuring
+    secure handling of sensitive data in compliance with state and federal
+    regulations, including HIPAA and FERPA.
+  </p>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
@@ -21,12 +29,12 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Bachelors in Computer Science"
+      subtitle="2022 to 2026 at Florida State University, Tallahassee, United States"
     />
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="General A.A."
+      subtitle="2017 to 2020 at Gulf Coast State College, Panama City, United States"
     />
   </div>
 
@@ -36,57 +44,52 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Junior Software Engineer"
+      subtitle="From 2023 to Current Day at CutTime, United States"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Led and contributed to the design and implementation of real-time
+      interactive web applications using Elixir and Phoenix LiveView within the
+      fine arts education sector. Worked alongside marketing, support, design to
+      ensure alignment of technical solutions with business goals and user
+      needs. Played a key role in building a foundational design system that
+      streamlined UI consistency and usability across the application.
+      Contributed to accessibility testing and improvements. Streamlined system
+      processes, optimized infrastructure usage and minized costs associated
+      with third-party services.
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Software Engineering Intern"
+      subtitle="From 2021 to 2022 at Millennia Patient Services/Jellyfish Health, Panama City, Florida"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Designing, Debugging and implementing frontend UI components for a web
+      application serving 1000+ medical practices. Collaborating with designers,
+      backend developers and analysts to ensure cohesive and efficient
+      development. Writing clean maintainable code using Angular, React and
+      Bootstrap CSS.
     </TimeLineElement>
   </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+    <li>Elixir</li>
+    <li>Phoenix Liveview</li>
+    <li>JavaScript</li>
+    <li>TypeScript</li>
+    <li>Python</li>
+    <li>SQL</li>
+    <li>PostgreSQL</li>
+    <li>MongoDB</li>
+    <li>React</li>
+    <li>Tailwind</li>
+    <li>Git</li>
+    <li>AWS S3</li>
+    <li>Docker</li>
+    <li>Github</li>
+    <li>ExUnit</li>
+    <li>Figma</li>
+    <li>Agile</li>
   </ul>
 </BaseLayout>
