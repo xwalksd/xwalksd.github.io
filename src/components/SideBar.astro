@@ -2,6 +2,7 @@
 import SideBarFooter from "./SideBarFooter.astro";
 import { Image } from "astro:assets";
 import SideBarMenu from "./SideBarMenu.astro";
+import profileImage from "src/components/profile.jpeg";
 const { sideBarActiveItemID } = Astro.props;
 ---
 
@@ -21,7 +22,7 @@ const { sideBarActiveItemID } = Astro.props;
               format="jpeg"
               width={300}
               height={300}
-              src="https:/xwalksd.github.io/profile.jpeg/"
+              src={profileImage}
               alt="Profile image"
             />
           </div>
