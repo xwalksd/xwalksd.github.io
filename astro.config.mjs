@@ -5,7 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://xwalksd.github.io/",
-  base: "/xwalksd.github.io/",
+  site: "https://xwalksd.github.io",
   integrations: [mdx(), sitemap(), tailwind()],
 });
